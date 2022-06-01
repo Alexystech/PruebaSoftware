@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: PruebaSoftware
+  profiles:
+    active: dev
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+server:
+  servlet:
+    context-path: /v1/prueba-software-api

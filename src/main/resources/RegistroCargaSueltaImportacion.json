@@ -1,0 +1,17 @@
+[
+  {
+    "id": 0,
+    "descripcion": "esta es la descripcion de la carga suelta",
+    "cantidad": "1500kg",
+    "operacion": {
+      "folio": 0,
+      "pedimento": "pedimento 1",
+      "cliente": "cliente 1",
+      "aduana": "aduana 1",
+      "patente": "patente 1",
+      "tipoMercancia": "CARGA_SUELTA",
+      "tipoOperacion": "IMPORTACION",
+      "paisOrigen": "MEXICO"
+    }
+  }
+]

@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    username: postgres
+    password: 1408
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/prueba_software_db?serverTimezone=UTC
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database: postgresql
+    show-sql: true
+server:
+  port: 8085

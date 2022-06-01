@@ -1,0 +1,137 @@
+[
+  {
+    "folio": "FA10D12345",
+    "tipoContenedor": "contenedor 1",
+    "dimensiones": "15m x 8m",
+    "operacion": {
+      "folio": 0,
+      "pedimento": "pedimento 1",
+      "cliente": "cliente 1",
+      "aduana": "aduana 1",
+      "patente": "patente 1",
+      "tipoMercancia": "CONTENERIZADA",
+      "tipoOperacion": "IMPORTACION",
+      "paisOrigen": "MEXICO"
+    }
+  },
+  {
+    "folio": "FA10D12346",
+    "tipoContenedor": "contenedor 2",
+    "dimensiones": "15m x 8m",
+    "operacion": {
+      "folio": 0,
+      "pedimento": "pedimento 2",
+      "cliente": "cliente 2",
+      "aduana": "aduana 2",
+      "patente": "patente 2",
+      "tipoMercancia": "CONTENERIZADA",
+      "tipoOperacion": "IMPORTACION",
+      "paisOrigen": "MEXICO"
+    }
+  },
+  {
+    "folio": "FA10D12347",
+    "tipoContenedor": "contenedor 3",
+    "dimensiones": "15m x 8m",
+    "operacion": {
+      "folio": 0,
+      "pedimento": "pedimento 3",
+      "cliente": "cliente 3",
+      "aduana": "aduana 3",
+      "patente": "patente 3",
+      "tipoMercancia": "CONTENERIZADA",
+      "tipoOperacion": "IMPORTACION",
+      "paisOrigen": "MEXICO"
+    }
+  },
+  {
+    "folio": "FA10D12348",
+    "tipoContenedor": "contenedor 4",
+    "dimensiones": "15m x 8m",
+    "operacion": {
+      "folio": 0,
+      "pedimento": "pedimento 4",
+      "cliente": "cliente 4",
+      "aduana": "aduana 4",
+      "patente": "patente 4",
+      "tipoMercancia": "CONTENERIZADA",
+      "tipoOperacion": "IMPORTACION",
+      "paisOrigen": "MEXICO"
+    }
+  },
+  {
+    "folio": "FA10D12349",
+    "tipoContenedor": "contenedor 5",
+    "dimensiones": "15m x 8m",
+    "operacion": {
+      "folio": 0,
+      "pedimento": "pedimento 5",
+      "cliente": "cliente 5",
+      "aduana": "aduana 5",
+      "patente": "patente 5",
+      "tipoMercancia": "CONTENERIZADA",
+      "tipoOperacion": "IMPORTACION",
+      "paisOrigen": "MEXICO"
+    }
+  },
+  {
+    "folio": "FA10D12350",
+    "tipoContenedor": "contenedor 6",
+    "dimensiones": "15m x 8m",
+    "operacion": {
+      "folio": 0,
+      "pedimento": "pedimento 6",
+      "cliente": "cliente 6",
+      "aduana": "aduana 6",
+      "patente": "patente 6",
+      "tipoMercancia": "CONTENERIZADA",
+      "tipoOperacion": "IMPORTACION",
+      "paisOrigen": "MEXICO"
+    }
+  },
+  {
+    "folio": "FA10D12351",
+    "tipoContenedor": "contenedor 7",
+    "dimensiones": "15m x 8m",
+    "operacion": {
+      "folio": 0,
+      "pedimento": "pedimento 7",
+      "cliente": "cliente 7",
+      "aduana": "aduana 7",
+      "patente": "patente 7",
+      "tipoMercancia": "CONTENERIZADA",
+      "tipoOperacion": "IMPORTACION",
+      "paisOrigen": "MEXICO"
+    }
+  },
+  {
+    "folio": "FA10D12352",
+    "tipoContenedor": "contenedor 8",
+    "dimensiones": "15m x 8m",
+    "operacion": {
+      "folio": 0,
+      "pedimento": "pedimento 8",
+      "cliente": "cliente 8",
+      "aduana": "aduana 8",
+      "patente": "patente 8",
+      "tipoMercancia": "CONTENERIZADA",
+      "tipoOperacion": "IMPORTACION",
+      "paisOrigen": "MEXICO"
+    }
+  },
+  {
+    "folio": "FA10D12353",
+    "tipoContenedor": "contenedor 9",
+    "dimensiones": "15m x 8m",
+    "operacion": {
+      "folio": 0,
+      "pedimento": "pedimento 9",
+      "cliente": "cliente 9",
+      "aduana": "aduana 9",
+      "patente": "patente 9",
+      "tipoMercancia": "CONTENERIZADA",
+      "tipoOperacion": "IMPORTACION",
+      "paisOrigen": "MEXICO"
+    }
+  }
+]
