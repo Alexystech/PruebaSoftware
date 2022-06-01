@@ -15,7 +15,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.Calendar;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
@@ -98,6 +97,20 @@ public class ContenedorServiceImpl implements ContenedorService {
         return ((List<Contenedor>) contenedorRepository.findAll());
     }
 
+    /**
+     * Este método recibe un {@code String folio} y busca el contenedor
+     * al que pertenece para posteriormente actualizar la fecha en la
+     * que se descargó el contenedor.
+     * Si el estatus de la operacion se encuentra en ETA/ETD (ya sea
+     * de importación o exportación) la operacion pasa a un estatus
+     * EN DESCARGO.
+     * Si el contenedor tiene un estatus EN TRANSPORTE pasa a modificarse
+     * a un estatus DESCARGADO, esto con la finalidad de llevar un control
+     * de todos los contenedores cuando estan descargados y pasar la operación
+     * a un estatus DESCARGADA
+     * @param folio
+     * @return
+     */
     @Override
     public Boolean descargaContenedor(String folio) {
 

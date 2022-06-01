@@ -49,7 +49,7 @@ public class Operacion {
     private TipoOperacion tipoOperacion;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "estatus", nullable = false)
+    @Column(name = "estatus", nullable = false, columnDefinition = "VARCHAR default 'ALTA'")
     private Estatus estatus;
 
     @Column(name = "fecha_arribo")

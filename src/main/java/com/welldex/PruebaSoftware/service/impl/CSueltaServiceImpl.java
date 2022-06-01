@@ -79,6 +79,20 @@ public class CSueltaServiceImpl implements CSueltaService {
         return ((List<CSuelta>) cSueltaRepository.findAll());
     }
 
+    /**
+     * Este método recibe el {@code id} y la {@code canDescargada} para
+     * poder obtener el cargamento suelto al que se quiere modificar
+     * los datos y por parte de la cantidad descargada, llevar la
+     * contabilidad del cargamento (posiblemente granular o liquido) cuanto
+     * se va descargando por evento.
+     * Mientras la cantidad descargada sea menor a la cantidad registrada de
+     * origen el estatus de la operación pasa a ser EN DESCARGO, pero cuando
+     * la cantidad descargada sea igual a la cantidad de origen el estatus de la
+     * operación pasa a ser DESCARGADA.
+     * @param id
+     * @param canDescargada
+     * @return
+     */
     @Override
     public Boolean descargaCargaSuelta(long id, double canDescargada) {
 
