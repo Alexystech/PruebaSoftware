@@ -37,10 +37,10 @@ public class CSuelta {
     private Long id;
 
     private String descripcion;
-    private String cantidad;
+    private Double cantidad;
 
     @Column(name = "cantidad_desc")
-    private String cantidadDesc;
+    private Double cantidadDesc;
 
     @Column(name = "fecha_desc")
     @Temporal(TemporalType.TIMESTAMP)

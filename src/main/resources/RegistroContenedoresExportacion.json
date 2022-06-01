@@ -4,7 +4,7 @@
     "tipoContenedor": "contenedor 1",
     "dimensiones": "15m x 8m",
     "operacion": {
-      "folio": 0,
+      "folio": "OPE1239X2",
       "pedimento": "pedimento 1",
       "cliente": "cliente 1",
       "aduana": "aduana 1",
@@ -19,7 +19,7 @@
     "tipoContenedor": "contenedor 2",
     "dimensiones": "15m x 8m",
     "operacion": {
-      "folio": 0,
+      "folio": "OPE1239X2",
       "pedimento": "pedimento 2",
       "cliente": "cliente 2",
       "aduana": "aduana 2",
@@ -34,7 +34,7 @@
     "tipoContenedor": "contenedor 3",
     "dimensiones": "15m x 8m",
     "operacion": {
-      "folio": 0,
+      "folio": "OPE1239X2",
       "pedimento": "pedimento 3",
       "cliente": "cliente 3",
       "aduana": "aduana 3",
@@ -49,7 +49,7 @@
     "tipoContenedor": "contenedor 4",
     "dimensiones": "15m x 8m",
     "operacion": {
-      "folio": 0,
+      "folio": "OPE1239X2",
       "pedimento": "pedimento 4",
       "cliente": "cliente 4",
       "aduana": "aduana 4",
@@ -64,7 +64,7 @@
     "tipoContenedor": "contenedor 5",
     "dimensiones": "15m x 8m",
     "operacion": {
-      "folio": 0,
+      "folio": "OPE1239X2",
       "pedimento": "pedimento 5",
       "cliente": "cliente 5",
       "aduana": "aduana 5",
@@ -79,7 +79,7 @@
     "tipoContenedor": "contenedor 6",
     "dimensiones": "15m x 8m",
     "operacion": {
-      "folio": 0,
+      "folio": "OPE1239X2",
       "pedimento": "pedimento 6",
       "cliente": "cliente 6",
       "aduana": "aduana 6",
@@ -94,7 +94,7 @@
     "tipoContenedor": "contenedor 7",
     "dimensiones": "15m x 8m",
     "operacion": {
-      "folio": 0,
+      "folio": "OPE1239X2",
       "pedimento": "pedimento 7",
       "cliente": "cliente 7",
       "aduana": "aduana 7",
@@ -109,7 +109,7 @@
     "tipoContenedor": "contenedor 8",
     "dimensiones": "15m x 8m",
     "operacion": {
-      "folio": 0,
+      "folio": "OPE1239X2",
       "pedimento": "pedimento 8",
       "cliente": "cliente 8",
       "aduana": "aduana 8",
@@ -124,7 +124,7 @@
     "tipoContenedor": "contenedor 9",
     "dimensiones": "15m x 8m",
     "operacion": {
-      "folio": 0,
+      "folio": "OPE1239X2",
       "pedimento": "pedimento 9",
       "cliente": "cliente 9",
       "aduana": "aduana 9",

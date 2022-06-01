@@ -10,4 +10,5 @@ public interface ContenedorService {
     Contenedor updateContenedor(Contenedor contenedor);
     Contenedor getContenedorByFolio(String folio);
     List<Contenedor> getAllContenedores();
+    Boolean descargaContenedor(String folio);
 }

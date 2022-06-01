@@ -4,7 +4,7 @@
     "descripcion": "esta es la descripcion de la carga suelta",
     "cantidad": "1500kg",
     "operacion": {
-      "folio": 0,
+      "folio": "OPE123F7Y0",
       "pedimento": "pedimento 1",
       "cliente": "cliente 1",
       "aduana": "aduana 1",

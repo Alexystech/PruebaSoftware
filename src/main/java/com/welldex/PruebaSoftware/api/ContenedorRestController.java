@@ -53,4 +53,10 @@ public class ContenedorRestController {
                 HttpStatus.OK);
     }
 
+    @PutMapping("/descargar/{folio}")
+    public ResponseEntity<Boolean> descargaContenedor(@PathVariable String folio) {
+        return new ResponseEntity<>(contenedorService.descargaContenedor(folio),
+                HttpStatus.ACCEPTED);
+    }
+
 }

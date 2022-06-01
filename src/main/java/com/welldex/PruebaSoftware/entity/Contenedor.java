@@ -10,6 +10,8 @@ import lombok.ToString;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
@@ -37,6 +39,10 @@ public class Contenedor {
     private String tipoContenedor;
 
     private String dimensiones;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "estatus_contenedor", nullable = false)
+    private EstatusContenedor estatusContenedor;
 
     @Column(name = "fecha_descargo")
     @Temporal(TemporalType.TIMESTAMP)

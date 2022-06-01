@@ -6,9 +6,9 @@ public enum Estatus {
     ETD,
     EN_ESPERA_ZARPE,
     EN_TRAYECTO,
-    EN_TRAQUE,
+    EN_ATRAQUE,
     EN_DESCARGO,
     DESCARGADA,
-    EN_RECONOCIIMENTO,
+    EN_RECONOCIMIENTO,
     LIBERADA
 }

@@ -2,6 +2,7 @@ package com.welldex.PruebaSoftware.service.impl;
 
 import com.welldex.PruebaSoftware.entity.Contenedor;
 import com.welldex.PruebaSoftware.entity.Estatus;
+import com.welldex.PruebaSoftware.entity.EstatusContenedor;
 import com.welldex.PruebaSoftware.entity.TipoOperacion;
 import com.welldex.PruebaSoftware.repository.ContenedorRepository;
 import com.welldex.PruebaSoftware.service.ContenedorService;
@@ -14,6 +15,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.Calendar;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @Service
@@ -33,6 +36,7 @@ public class ContenedorServiceImpl implements ContenedorService {
                     .setFechaArribo(Calendar.getInstance());
 
             contenedor.getOperacion().setEstatus(Estatus.ETA);
+            contenedor.setEstatusContenedor(EstatusContenedor.EN_TRANSPORTE);
         }
 
         if ( contenedor.getOperacion().getTipoOperacion().equals(TipoOperacion.EXPORTACION) ) {
@@ -40,6 +44,7 @@ public class ContenedorServiceImpl implements ContenedorService {
                     .setFechaZarpe(Calendar.getInstance());
 
             contenedor.getOperacion().setEstatus(Estatus.ETD);
+            contenedor.setEstatusContenedor(EstatusContenedor.EN_TRANSPORTE);
         }
 
         return contenedorRepository.save(contenedor);
@@ -93,4 +98,36 @@ public class ContenedorServiceImpl implements ContenedorService {
         return ((List<Contenedor>) contenedorRepository.findAll());
     }
 
+    @Override
+    public Boolean descargaContenedor(String folio) {
+
+        Contenedor contenedor = getContenedorByFolio(folio);
+        contenedor.setFechaDescargo(Calendar.getInstance());
+
+        if ( contenedor.getOperacion().getEstatus().equals(Estatus.ETA) ||
+            contenedor.getOperacion().getEstatus().equals(Estatus.ETD) ) {
+
+            contenedor.getOperacion().setEstatus(Estatus.EN_DESCARGO);
+
+        }
+
+        if ( contenedor.getEstatusContenedor().equals(EstatusContenedor.EN_TRANSPORTE) ) {
+            contenedor.setEstatusContenedor(EstatusContenedor.DESCARGADO);
+        }
+
+        contenedorRepository.save(contenedor);
+
+        List<Contenedor> contenedores = getAllContenedores().stream()
+                .filter( selftContenedor -> selftContenedor.getEstatusContenedor().equals(EstatusContenedor.EN_TRANSPORTE) &&
+                        selftContenedor.getOperacion().getFolio().equals(contenedor.getOperacion().getFolio()) )
+                .collect(Collectors.toList());
+
+        if ( contenedores.isEmpty() ) {
+            contenedor.getOperacion().setEstatus(Estatus.DESCARGADA);
+        }
+
+        contenedorRepository.save(contenedor);
+
+        return true;
+    }
 }

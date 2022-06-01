@@ -1,0 +1,47 @@
+[
+  {
+    "id": 0,
+    "descripcion": "esta es la descripcion de la carga suelta",
+    "cantidad": 1500.0,
+    "operacion": {
+      "folio": "OPE123F7X0",
+      "pedimento": "pedimento 1",
+      "cliente": "cliente 1",
+      "aduana": "aduana 1",
+      "patente": "patente 1",
+      "tipoMercancia": "CARGA_SUELTA",
+      "tipoOperacion": "EXPORTACION",
+      "paisOrigen": "MEXICO"
+    }
+  },
+  {
+    "id": 0,
+    "descripcion": "esta es la descripcion de la carga suelta",
+    "cantidad": 1500.0,
+    "operacion": {
+      "folio": "OPE123F7X2",
+      "pedimento": "pedimento 2",
+      "cliente": "cliente 2",
+      "aduana": "aduana 2",
+      "patente": "patente 2",
+      "tipoMercancia": "CARGA_SUELTA",
+      "tipoOperacion": "EXPORTACION",
+      "paisOrigen": "MEXICO"
+    }
+  },
+  {
+    "id": 0,
+    "descripcion": "esta es la descripcion de la carga suelta",
+    "cantidad": 1500.0,
+    "operacion": {
+      "folio": "OPE123F7X3",
+      "pedimento": "pedimento 3",
+      "cliente": "cliente 3",
+      "aduana": "aduana 3",
+      "patente": "patente 3",
+      "tipoMercancia": "CARGA_SUELTA",
+      "tipoOperacion": "EXPORTACION",
+      "paisOrigen": "MEXICO"
+    }
+  }
+]
