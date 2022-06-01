@@ -2,7 +2,7 @@
   {
     "id": 0,
     "descripcion": "esta es la descripcion de la carga suelta",
-    "cantidad": "1500kg",
+    "cantidad": 1500.0,
     "operacion": {
       "folio": "OPE123F7Y0",
       "pedimento": "pedimento 1",

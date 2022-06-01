@@ -53,4 +53,10 @@ public class CSueltaRestController {
                 HttpStatus.OK);
     }
 
+    @PutMapping("/descarga/{id}/{canDescargada}")
+    public ResponseEntity<Boolean> descargaCargaSuelta(@PathVariable long id, @PathVariable double canDescargada) {
+        return new ResponseEntity<>(cSueltaService.descargaCargaSuelta(id, canDescargada),
+                HttpStatus.ACCEPTED);
+    }
+
 }

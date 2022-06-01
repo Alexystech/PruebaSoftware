@@ -79,4 +79,28 @@ public class CSueltaServiceImpl implements CSueltaService {
         return ((List<CSuelta>) cSueltaRepository.findAll());
     }
 
+    @Override
+    public Boolean descargaCargaSuelta(long id, double canDescargada) {
+
+        CSuelta cSuelta = getCSueltaById(id);
+        cSuelta.setFechaDesc(Calendar.getInstance());
+
+        if ( cSuelta.getCantidadDesc() == null ) {
+            cSuelta.setCantidadDesc(0.0);
+        }
+
+        cSuelta.setCantidadDesc(canDescargada + cSuelta.getCantidadDesc());
+
+        if ( cSuelta.getCantidadDesc() < cSuelta.getCantidad() ) {
+            cSuelta.getOperacion().setEstatus(Estatus.EN_DESCARGO);
+        }
+
+        if ( cSuelta.getCantidadDesc().doubleValue() == cSuelta.getCantidad().doubleValue() ) {
+            cSuelta.getOperacion().setEstatus(Estatus.DESCARGADA);
+        }
+
+        cSueltaRepository.save(cSuelta);
+
+        return true;
+    }
 }

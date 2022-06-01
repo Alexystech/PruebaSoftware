@@ -10,4 +10,5 @@ public interface CSueltaService {
     CSuelta updateCSuelta(CSuelta cSuelta);
     CSuelta getCSueltaById(long id);
     List<CSuelta> getAllCargasSuelta();
+    Boolean descargaCargaSuelta(long id, double canDescargada);
 }

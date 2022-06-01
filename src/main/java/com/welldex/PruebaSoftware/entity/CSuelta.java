@@ -39,7 +39,7 @@ public class CSuelta {
     private String descripcion;
     private Double cantidad;
 
-    @Column(name = "cantidad_desc")
+    @Column(name = "cantidad_desc", columnDefinition = "Decimal(10,1) default '0.0'")
     private Double cantidadDesc;
 
     @Column(name = "fecha_desc")
